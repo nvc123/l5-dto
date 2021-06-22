@@ -1,0 +1,25 @@
+{
+  "name": "nvc/l5-dto",
+  "description": "dto services for laravel 5",
+  "keywords": [
+    "laravel",
+    "api"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "nvc",
+      "email": "agndev3@gmail.com"
+    }
+  ],
+  "require": {
+    "laravel/framework": ">=5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "L5Dto\\": "src"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
