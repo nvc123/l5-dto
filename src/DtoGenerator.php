@@ -68,6 +68,11 @@ class DtoGenerator
         if (method_exists($object, '__set')) {
             $object->__set($property->getName(), $value);
         } else {
+            $type = $property->getType();
+            if (is_null($value) && $type && !$type->allowsNull()){
+                return;
+            }
+            
             $property->setValue($object, $value);
         }
     }
